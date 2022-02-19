@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- link de fontawesome -->
+    <script src="https://kit.fontawesome.com/d01849834d.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+    <!-- link mi css -->
+    <!-- link bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <header>
+        <!-- nav de bootstrap -->
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between">
+                <div>
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;"> 
+                        <a class="navbar-brand" href="/index.html"><img src="/img/logo.jpeg" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                                  PRODUCTOS
+                                </a>
+                                  <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" id="Soquetes">Soquetes</a>
+                                    <a class="dropdown-item" id="Media Cana">Media Caña</a>
+                                    <a class="dropdown-item" id="Tenis">Tenis</a>
+                                    <a class="dropdown-item" id="Nike">Nike</a>
+                                    <a class="dropdown-item" id="Retro">Retro</a>
+                                    <a class="dropdown-item" id="all">Ver todo</a>
+                                  </div>
+                                </select>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                        <!-- modal de bs -->
+                        <!-- Button trigger modal -->
+                        <button type="button" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa-solid fa-cart-shopping"></i><span id="contadorCarrito"><h2>0</h2></span>
+                        </button>
+                     </nav>
+                     <!-- Modal -->
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-contenedor modal-content">
+                          <div class="modal-carrito modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">CARRITO</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div id="carritoContenedor" class="modal-body">
+                            <!-- <div class="productoenCarrito">
+                                    <p>Buzo 1</p>
+                                    <p>Precio: $1200</p>
+                                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                                  </div> -->
+                          </div>
+                          <div class="modal-footer">
+                            <p class="precioProducto">Precio Total: $<span id="precioTotal">0</span></p>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Finalizar Compra</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cierre navbar -->
+    </header>
+    <!-- inicio del contenido -->
+ 
+    <!-- seccion vacia para llenarla con cards desde js -->
+    <main id="contenedorProductos">
+
+    </main>
+
+    <!-- inicio footer -->
+    <footer>
+        <div class="container-fluid">
+          <div class="row m-4">
+            <!-- logo anakin -->
+            <div class="col-lg-4 col-4">
+              <a href="#">
+                <img class="footerImg" src="/img/logo.jpeg" alt="logo">
+              </a> 
+            </div>
+            <!-- logo wpp -->
+            <div class="col-lg-1 col-1">
+              <a href="">
+                <img class="footerImg1" src="/img/rss/whatsapp.png" alt="wpp">
+              </a>
+            </div>
+            <!-- logo ig -->
+            <div class="col-lg-1 col-1">
+              <a href="https://www.instagram.com/anakin.medias/">
+                <img class="footerImg1" src="/img/rss/instagram.png" alt="ig">
+              </a>
+            </div>
+            <!-- logo twitter -->
+            <div class="col-lg-1 col-1">
+              <a href="">
+                <img class="footerImg1" src="/img/rss/gorjeo.png" alt="twitter">
+              </a>
+            </div>
+            <!-- logo facebook -->
+            <div class="col-lg-1 col-1">
+              <a href="">
+                <img class="footerImg1" src="/img/rss/facebook.png" alt="fb">
+              </a>
+            </div>
+            <!-- logo mail -->
+            <div class="col-lg-1 col-1">
+              <a href="">
+                <img class="footerImg1" src="/img/rss/email.png" alt="e-mail">
+              </a>
+            </div>
+            <!-- copyright derechos -->
+            <div class="col-lg-3 col-3">
+              <p>© 2022 Copyright: Desarrollo de Web por Paula Di Cesare.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- cierre footer -->
+      <!-- link bs -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+      <!-- link js -->
+    <script src="/js/productos.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

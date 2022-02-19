@@ -1,0 +1,55 @@
+*{
+    font-family: 'Chau Philomene One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    border: none;
+}
+/* carrito del nav de la pagina de productos */
+.fa-cart-shopping:before, .fa-shopping-cart:before {
+    content: "\f07a";
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    border: none;
+}
+
+#contenedorProductos {
+    max-width: 1200px;
+    margin: 125px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}
+.footerImg{
+    width: 15%;
+}
+.footerImg1{
+    width: 50%;
+}
+p {
+    line-height: 1.8;
+}
+.producto {
+    max-width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    size: 200px;
+}
+/* estilo del modal */
+.modal-backdrop.show {
+    opacity: 0;
+}
+
+form{
+    margin: 50px;
+    padding: 80px;
+}

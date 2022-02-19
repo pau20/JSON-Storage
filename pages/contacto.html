@@ -1,0 +1,77 @@
+<!-- selector del modelo de las medias -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+     <!-- link bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- link mi css -->
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+	<header>
+        <!-- nav de bootstrap -->
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between">
+                <div>
+                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: black;"> 
+                        <!-- colores que puedo llegar a usar #772c8c  #9238a7  #5a3b62  #381546 #dad1d7 -->
+                        <a class="navbar-brand" href="/index.html"><img src="../img/logo.jpeg" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html" >
+                                  Productos
+                                </a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">CONTACTO</a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- cierre navbar -->
+    </header>
+
+    <!-- inicio formulario -->
+    <main>
+    	<form>
+		  <div class="form-group">
+		    <label class="user" for="exampleInputEmail1">Ingrese su dirección de email</label>
+		    <input type="email" class="form-control" id="email-Id" aria-describedby="emailHelp">
+		    <small id="emailHelp" class="form-text text-muted">Este sitio es seguro</small>
+		  </div>
+		  <div class="form-group">
+		    <label class="pass" for="exampleInputPassword1">Contraseña</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1">
+		  </div>
+		  <div class="form-group form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+		  </div>
+		  <button id="btnIngreso" type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+    </main>
+    <!-- link con js -->
+    <script src="/js/form.js"></script>
+</body>
+</html>
