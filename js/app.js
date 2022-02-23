@@ -61,6 +61,14 @@ function mostrarProductos(array){
     //creamos el evento para que al hacer click sobre el boton se desarrolle una fc
     btnA.addEventListener(`click`, () =>{
         agregarCarrito(id);
+
+        Toastify({
+            text: " 🛒 Producto agregado",
+            className: "info",
+            style: {
+              background: "linear-gradient(to right, #d1cfd2, #846c84, #7c6484, #3c3044)",
+            }
+          }).showToast();
     })
        
   }
@@ -71,11 +79,13 @@ function mostrarProductos(array){
 function agregarCarrito(id){
     let repetido = carrito.find(item => item.id == id)
     
+    
     if (repetido){
         console.log(repetido);
         repetido.cantidad ++
         document.getElementById(`cantidad${repetido.id}`).innerHTML = `<p id=cantidad${repetido.id}>Cantidad: $${repetido.cantidad}</p>`
         actualizarCarrito()
+
     }else{
         let productoA = productos.find(elemento => elemento.id == id)
        console.log(productoA);
@@ -113,6 +123,13 @@ function mostrarCarrito(productoA){
             carrito = carrito.filter(elemento => elemento.id != id)
             actualizarCarrito()
             localStorage.setItem(`carrito`, JSON.stringify(carrito))
+            Toastify({
+                text: "❌ Producto eliminado",
+                className: "info",
+                style: {
+                  background: "linear-gradient(to right, #91050e, #9e6867)",
+                }
+              }).showToast();
         }else{
             cantidad = cantidad - 1
             document.getElementById(`cantidad${id}`).innerHTML = `<p id= cantidad${id}>Cantidad:${cantidad}</p>`
